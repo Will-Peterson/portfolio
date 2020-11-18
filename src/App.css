@@ -1,23 +1,56 @@
+.nav-link {
+    color:floralwhite;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: darkkhaki;
+    text-shadow: 1px 1px #ff0000;
+}
+
 .jumbotron {
     text-align: center;
-    background-image: url('./assets/images/bkg-header-new.jpg');
+    background-image: url('./assets/images/bkg-header.jpg');
+    /* background-blend-mode: luminosity; */
     height: 100vh;
     background-position: center;
     background-size: cover;
     padding-top: 120px;
     margin: 0;
-    font-weight: 700;
     box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
-    color:#a2ded0;
-}
-
-.rounded {
-    border-radius: 50%;
+    color: rgb(62, 62, 58);
 }
 
 #header {
     height: 100vh;
-    width: 100%
+    width: 100%;
+    color: black;
+}
+
+.header {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+#about {
+    height: 100vh;
+    width: 90%;
+    padding-top: 65px;
+    /* background-color: #343a40; */
 }
 
 .title {
@@ -29,21 +62,68 @@
 
 
 
-#about {
+
+
+
+
+
+
+
+
+
+#contact {
+    padding-top: 45px;
     height: 100vh;
-    /* background-color: #343a40; */
-    margin: 0 auto;
+    width: 100%;
+    color: black;
 }
+
+
+
+.rounded {
+    border-radius: 50%;
+}
+
+
+
+
+
 
 #projects {
     height: 100vh;
     width: 100%;
+    padding-top: 45px;
+    /* margin-bottom: 40px; */
 }
 
-#footer {
-    height: 70vh;
+.footer {
+    height: 100px;
     width: 100%;
     background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.footer a {
+    color: white;
+}
+.footer a:hover {
+    color: darkkhaki;
+    text-decoration: none;
+    text-shadow: 1px 1px #ff0000;
+}
+.footer span {
+    padding-top: 20px;
+    display: block;
+}
+
+.block {
+    position: absolute;
+    display: inline;
+    height: 20px;
+    width: 10px;
+    left: 500px;
+    background-color: blue;
 }
 
 
@@ -55,30 +135,35 @@
 
 
 
+/* xs */
+@media (min-width: 0px) {
+    .header { font-size: 4rem; }
+}
 
-
-
-
+/* sm */
 @media (min-width: 576px) {
-    #about {
-        max-width: 90%;
-    }
+    .header { font-size: 6rem; }
+    #about { max-width: 90%; }
 }
 
+/* md */
 @media (min-width: 768px) {
-    #about {
-        max-width: 90%;
-    }
+    .header { font-size: 7rem; }
+    #about { max-width: 90%; }
 }
 
+/* lg */
 @media (min-width: 992px) {
-    #about {
-        max-width: 90%;
-    }
+    .header { font-size: 9rem; }
+    #about { max-width: 90%; }
 }
 
-@media (min-width: 1140px) {
-    #about {
-        max-width: 90%;
-    }
+/* xl */
+@media (min-width: 1200px) {
+    #about { max-width: 90%; }
+}
+
+/* xxl */
+@media (min-width: 1800px) {
+
 }
